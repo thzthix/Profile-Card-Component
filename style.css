@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Fonts */
+  --FF: "Kumbh Sans", sans-serif;
+  --FSIZE: 1.8rem;
+  --FREGULAR: 400;
+  --FBOLD: 700;
+  --PMCYAN: hsl(185, 75%, 39%);
+  --PMDARKBLUE: hsl(229, 23%, 23%);
+  --PMGRAY: hsl(227, 10%, 46%);
+  --NGRAY: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-size: var(--FSIZE);
+  font-family: var(--FF);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-color: var(--PMCYAN);
+}
+main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.card {
+  /* height: 36rem; */
+  align-items: center;
+  background-color: #fff;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 25px 30px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+
+.card__info {
+  align-items: center;
+  border-bottom: 0.01px solid hsla(0, 0%, 55%, 0.36);
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.8rem;
+  width: 100%;
+}
+.card__info img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 2rem;
+}
+.info__main {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 50%;
+  margin-bottom: 0.7rem;
+}
+.main__h1 {
+  color: var(--PMDARKBLUE);
+  font-size: var(--FSIZE);
+  font-weight: var(--FBOLD);
+}
+.main__p {
+  color: var(--PMGRAY);
+  font-weight: var(--FREGULAR);
+}
+.info__p {
+  color: var(--PMGRAY);
+  font-size: 1.5rem;
+  font-weight: var(--FREGULAR);
+  margin-bottom: 2.3rem;
+}
+.card__traffics {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  padding: 2.3rem;
+  width: 100%;
+  /* margin-bottom: 2rem; */
+}
+.traffics__div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  /* padding: 2rem; */
+}
+.traffics__number {
+  color: var(--PMDARKBLUE);
+  font-size: var(--FF);
+  font-weight: var(--FBOLD);
+}
+.traffics__title {
+  color: var(--PMGRAY);
+  font-size: 1rem;
+  font-weight: var(--FREGULAR);
+  letter-spacing: 0.15rem;
+}
